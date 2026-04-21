@@ -10,7 +10,7 @@ export default function Header() {
 		`px-3 py-2 rounded-md transition-colors ${
 			isActive
 				? "bg-red-900 text-white font-bold"
-				: "text-gray-300 hover:bg-gray-700 hover:text-white"
+				: "text-gray-300 hover:bg-red-900/40 hover:text-white"
 		}`;
 
 	return (
