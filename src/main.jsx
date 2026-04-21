@@ -14,14 +14,8 @@ createRoot(document.getElementById("root")).render(
 				<Route element={<App />}>
 					<Route path="/" element={<h1>Home</h1>} />
 					<Route path="/sects" element={<h1>Sects</h1>} />
-					<Route
-						path="/clans"
-						element={<div className="p-8">Clans</div>}
-					/>
-					<Route
-						path="/disciplines"
-						element={<div className="p-8">Disciplines</div>}
-					/>
+					<Route path="/clans" element={<h1>Clans</h1>} />
+					<Route path="/disciplines" element={<h1>Disciplines</h1>} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
