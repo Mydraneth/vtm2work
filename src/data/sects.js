@@ -28,7 +28,7 @@ export const sects = [
 	},
 	{
 		id: 3,
-		name: "Independent Clans",
+		name: "Independent",
 		description_short:
 			"The Independent Clans are a collection of vampire clans that do not align with the major factions.",
 		description_long:

@@ -1,24 +1,37 @@
-import { StrictMode } from "react";
+// main.jsx
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
 import App from "./App.jsx";
-import Header from "./components/Header.jsx";
 import "./index.css";
+import ClanDetailPage from "./pages/ClansDetailsPage.jsx";
+import ClansPage from "./pages/ClansPage.jsx";
+import DisciplinesDetailPage from "./pages/DisciplinesDetails.jsx";
+import DisciplinesPage from "./pages/DisciplinesPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import SectDetailPage from "./pages/SectsDetails.jsx";
+import SectsPage from "./pages/SectsPage.jsx";
 
 createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<BrowserRouter>
-			<Header />
-
-			<Routes>
-				{/* App acts as the Layout for all sub-routes */}
-				<Route element={<App />}>
-					<Route path="/" element={<h1>Home</h1>} />
-					<Route path="/sects" element={<h1>Sects</h1>} />
-					<Route path="/clans" element={<h1>Clans</h1>} />
-					<Route path="/disciplines" element={<h1>Disciplines</h1>} />
+	<BrowserRouter>
+		<Routes>
+			<Route element={<App />}>
+				<Route path="/" element={<HomePage />} />
+				<Route path="sects">
+					<Route index element={<SectsPage />} />
+					<Route path=":sect" element={<SectDetailPage />} />
 				</Route>
-			</Routes>
-		</BrowserRouter>
-	</StrictMode>,
+				<Route path="clans">
+					<Route index element={<ClansPage />} />
+					<Route path=":clan" element={<ClanDetailPage />} />
+				</Route>
+				<Route path="disciplines">
+					<Route index element={<DisciplinesPage />} />
+					<Route
+						path=":discipline"
+						element={<DisciplinesDetailPage />}
+					/>
+				</Route>
+			</Route>
+		</Routes>
+	</BrowserRouter>,
 );

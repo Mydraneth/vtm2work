@@ -76,14 +76,14 @@ export const disciplines = [
 		image: "https://vtm.paradoxwikis.com/images/thumb/4/40/Oblivion_symbol.png/1024px-Oblivion_symbol.png?20220205155617",
 	},
 	{
-		id: 7,
+		id: 8,
 		name: "Potence",
 		description: "Strengthens the user's physical prowess.",
 		mainClans: ["Brujah", "Nosferatu", "Lasombra"],
 		image: "https://vtm.paradoxwikis.com/images/thumb/a/a8/Potence_symbol.png/1023px-Potence_symbol.png?20220205155712",
 	},
 	{
-		id: 8,
+		id: 9,
 		name: "Presence",
 		description:
 			"Enables the user to use subtle manipulation, control, and swaying of emotions to guide others towards a goal.",
@@ -91,7 +91,7 @@ export const disciplines = [
 		image: "https://vtm.paradoxwikis.com/images/thumb/0/02/Presence_symbol.png/1023px-Presence_symbol.png?20220205155733",
 	},
 	{
-		id: 9,
+		id: 10,
 		name: "Protean",
 		description:
 			"Grants the ability to change one's shape, grow claws, meld into the earth, or become fog.",
@@ -99,7 +99,7 @@ export const disciplines = [
 		image: "https://vtm.paradoxwikis.com/images/thumb/8/8a/Protean_symbol.png/1023px-Protean_symbol.png?20220205155750",
 	},
 	{
-		id: 10,
+		id: 11,
 		name: "Thin-blood Alchemy",
 		description:
 			"The creation of mixtures of blood, emotions, and other varied ingredients to activate unique effects or even copy other Disciplines.",
