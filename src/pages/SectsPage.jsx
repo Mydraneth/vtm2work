@@ -3,7 +3,7 @@ export default function SectsPage() {
 		<div className="p-4">
 			<h1>Sects Ana Sayfası</h1>
 			<p className="text-gray-400">
-				Burada tüm mezheplerin listesini gösterebilirsin.
+				Burada tüm sectlerin listesini gösterebilirsin.
 			</p>
 		</div>
 	);
