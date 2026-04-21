@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router";
+import logo from "../assets/logo.png";
 import { clans } from "../data/clans";
 import { disciplines } from "../data/disciplines";
 import { sects } from "../data/sects";
@@ -16,7 +17,7 @@ export default function Header() {
 		<header className="bg-zinc-900 p-3 shadow-lg relative z-50">
 			<nav className="max-w-6xl  flex items-center gap-4">
 				<NavLink to="/" className="max-w-10 mr-7 ml-5">
-					<img src="src/assets/logo.png" alt="logo" />
+					<img src={logo} alt="logo" />
 				</NavLink>
 				<NavLink to="/" end className={navClass}>
 					Home
@@ -27,7 +28,7 @@ export default function Header() {
 							<NavLink
 								key={sect.id}
 								to={`/sects/${sect.name.toLowerCase()}`}
-								className="block px-4 py-2 hover:bg-gray-700"
+								className="block px-4 py-2 hover:bg-red-900/40"
 							>
 								{sect.name}
 							</NavLink>
@@ -40,7 +41,7 @@ export default function Header() {
 							<NavLink
 								key={clan.id}
 								to={`/clans/${clan.name.toLowerCase()}`}
-								className="block px-4 py-2 hover:bg-gray-700"
+								className="block px-4 py-2 hover:bg-red-900/40"
 							>
 								{clan.name}
 							</NavLink>
@@ -57,7 +58,7 @@ export default function Header() {
 							<NavLink
 								key={discipline.id}
 								to={`/disciplines/${discipline.name.toLowerCase()}`}
-								className="block px-4 py-2 hover:bg-gray-700"
+								className="block px-4 py-2 hover:bg-red-900/40"
 							>
 								{discipline.name}
 							</NavLink>
@@ -109,7 +110,7 @@ function NavDropdown({ title, to, children, navClass }) {
 
 			{isOpen && (
 				<div
-					className="absolute left-0 mt-0 w-48 bg-gray-900 border border-gray-800 rounded-b-md shadow-xl py-2 flex flex-col text-gray-300"
+					className="absolute left-0 mt-0 w-48 bg-zinc-800 border border-zinc-700/50 rounded-b-md shadow-xl py-2 flex flex-col text-gray-300"
 					onClick={() => setIsOpen(false)} // Close menu when a sub-link is clicked
 				>
 					{children}
