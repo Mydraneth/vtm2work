@@ -9,6 +9,7 @@ createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<BrowserRouter>
 			<Header />
+
 			<Routes>
 				{/* App acts as the Layout for all sub-routes */}
 				<Route element={<App />}>

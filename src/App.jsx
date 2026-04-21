@@ -1,14 +1,11 @@
-import { Button } from "@/components/ui/button";
 import { Outlet } from "react-router";
 
 function App() {
 	return (
-		<div className="bg-background dark text-primary-foreground">
+		<>
+			<h1>sa</h1>
 			<Outlet />
-			<div className="flex min-h-svh flex-col items-center justify-center">
-				<Button>Click me</Button>
-			</div>
-		</div>
+		</>
 	);
 }
 
