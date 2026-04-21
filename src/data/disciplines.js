@@ -19,7 +19,7 @@ export const disciplines = [
 		id: 2,
 		name: "Blood Sorcery",
 		description:
-			"A type of blood magic that allows the practitioners to manipulate the blood, mortal or vampiric.",
+			"A type of blood magic that allows the practitioners to manipulate the blood, mortal or vampiric. Blood Sorcery Rituals are an extension of Blood Sorcery.",
 		mainClans: ["Banu Haqim", "Tremere"],
 		image: "https://vtm.paradoxwikis.com/images/thumb/8/89/Blood_Sorcery_symbol.png/1024px-Blood_Sorcery_symbol.png?20220205151610",
 	},
@@ -71,7 +71,7 @@ export const disciplines = [
 		id: 7,
 		name: "Oblivion",
 		description:
-			"Has two branches: one allows the user to manipulate shadows at will and the other enables necromancy or usage of spirits, though both tap into the Abyss.",
+			"Has two branches: one allows the user to manipulate shadows at will and the other enables necromancy or usage of spirits, though both tap into the Abyss. Oblivion Ceremonies are an extension of Oblivion.",
 		mainClans: ["Hecata", "Lasombra"],
 		image: "https://vtm.paradoxwikis.com/images/thumb/4/40/Oblivion_symbol.png/1024px-Oblivion_symbol.png?20220205155617",
 	},
